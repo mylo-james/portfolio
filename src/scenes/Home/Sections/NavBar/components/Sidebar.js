@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import ToggleThemeButton from '../../../../../components/ToggleThemeButton';
 import NavScroll from './NavScroll';
 

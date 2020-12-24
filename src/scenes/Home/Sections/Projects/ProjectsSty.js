@@ -6,7 +6,7 @@ const ProjectsSty = styled.div`
 
     .anchor {
         position: absolute;
-        top: -50px;
+        top: -51px;
     }
 `;
 

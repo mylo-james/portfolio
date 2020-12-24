@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { accent, back, front } from '../../../../styles/themes';
+import { accent, front } from '../../../../styles/themes';
 
 const SplashSty = styled.div`
     display: flex;

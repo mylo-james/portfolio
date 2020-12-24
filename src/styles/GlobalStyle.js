@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
    body a {
        color: ${front};
        text-decoration: none;
+       overflow-y: scroll;
+       -webkit-overflow-scrolling: touch;
    }
    body a:visited {
        text-decoration: none;
