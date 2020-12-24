@@ -1,14 +1,17 @@
-import styled from 'styled-components';
-import * as theme from './themes.js';
+import { Route, Switch } from 'react-router-dom';
+import Home from './scenes/Home';
+import NotFound from './scenes/NotFound';
 
-const AppSty = styled.div`
-    color: ${theme.primary};
-`;
 function App() {
     return (
-        <>
-            <AppSty>Hello from App</AppSty>
-        </>
+        <Switch>
+            <Route exact path='/'>
+                <Home />
+            </Route>
+            <Route exact path='*'>
+                <NotFound />
+            </Route>
+        </Switch>
     );
 }
 
