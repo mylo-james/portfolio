@@ -11,8 +11,7 @@ const GlobalStyle = createGlobalStyle`
    body a {
        color: ${front};
        text-decoration: none;
-       overflow-y: scroll;
-       -webkit-overflow-scrolling: touch;
+     
    }
    body a:visited {
        text-decoration: none;
@@ -24,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
        font-family: 'Rubik', sans-serif;
        color: ${front};
        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+       overflow-y: scroll;
+       -webkit-overflow-scrolling: touch;
 
    }
 `;
