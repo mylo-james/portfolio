@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { primary } from '../../styles/themes';
+import { accent } from '../../styles/themes';
 
 const NotFoundSty = styled.div`
     h1 {
-        color: ${primary};
+        color: ${accent};
     }
 `;
 

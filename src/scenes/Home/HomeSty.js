@@ -1,10 +1,6 @@
 import styled from 'styled-components';
-import { primary } from '../../styles/themes';
+import { accent } from '../../styles/themes';
 
-const HomeSty = styled.div`
-    h1 {
-        color: ${primary};
-    }
-`;
+const HomeSty = styled.div``;
 
 export default HomeSty;
