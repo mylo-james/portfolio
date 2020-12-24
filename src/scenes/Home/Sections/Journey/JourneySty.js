@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const JourneySty = styled.div`
     position: relative;
-    height: 1000px;
+    height: 1040px;
     border: 1px solid white;
 
     .anchor {
