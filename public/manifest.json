@@ -1,8 +1,8 @@
 {
-  "short_name": "React Template",
-  "name": "Create React App Template",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "short_name": "Mylo James Portfolio",
+    "name": "Mylo James Web Development Portfolio",
+    "start_url": "https://mjames.dev",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }
