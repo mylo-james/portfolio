@@ -1,7 +1,15 @@
+import styled from 'styled-components';
+import * as theme from './themes.js';
+
+const AppSty = styled.div`
+    color: ${theme.primary};
+`;
 function App() {
-  return (
-    <h1>Hello from App</h1>
-  );
+    return (
+        <>
+            <AppSty>Hello from App</AppSty>
+        </>
+    );
 }
 
 export default App;
