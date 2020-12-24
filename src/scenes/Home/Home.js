@@ -1,11 +1,12 @@
-import ToggleThemeButton from '../../components/ToggleThemeButton';
+import NavBar from './Sections/NavBar';
+import Splash from './Sections/Splash';
 import HomeSty from './HomeSty';
 
 function Home() {
     return (
         <HomeSty>
-            <h1>Hello from App</h1>
-            <ToggleThemeButton />
+            <Splash />
+            <NavBar />
         </HomeSty>
     );
 }

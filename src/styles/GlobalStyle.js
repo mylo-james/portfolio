@@ -1,21 +1,16 @@
 import { useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { back, front, accent, primary, gray } from './themes';
+import { back, front } from './themes';
 import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
    ${reset}
    body {
-       background: ${back}
+       background: ${back};
+       height: 100vh;
+       font-family: 'Rubik', sans-serif;
+       color: ${front}
    }
-
-   body *  {
-       color: ${front};
-       border: solid 1px ${primary};
-       background: ${accent};
-       box-shadow: 2px 3px ${gray}
-   }
-   
 `;
 
 const GlobalStyleWrapper = ({ children }) => {

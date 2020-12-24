@@ -4,14 +4,16 @@ import NotFound from './scenes/NotFound';
 
 function App() {
     return (
-        <Switch>
-            <Route exact path='/'>
-                <Home />
-            </Route>
-            <Route exact path='*'>
-                <NotFound />
-            </Route>
-        </Switch>
+        <>
+            <Switch>
+                <Route exact path='/'>
+                    <Home />
+                </Route>
+                <Route exact path='*'>
+                    <NotFound />
+                </Route>
+            </Switch>
+        </>
     );
 }
 
