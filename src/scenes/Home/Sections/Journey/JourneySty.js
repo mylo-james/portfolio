@@ -9,6 +9,20 @@ const JourneySty = styled.div`
         position: absolute;
         top: -51px;
     }
+
+    .waypoint {
+        position: absolute;
+        top: -51px;
+    }
+
+    .title {
+        height: 30px;
+        border: white 1px solid;
+    }
+
+    .timeline {
+        height: calc(100% - 30px);
+    }
 `;
 
 export default JourneySty;

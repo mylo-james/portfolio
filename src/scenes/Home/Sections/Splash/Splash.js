@@ -6,7 +6,7 @@ function Splash() {
                 <p className='name'>Mylo James</p>
                 <p>Fullstack Web Developer</p>
             </div>
-            <a className='go' href='#start'>
+            <a className='go' href='#journey'>
                 Let's go!
             </a>
         </SplashSty>
