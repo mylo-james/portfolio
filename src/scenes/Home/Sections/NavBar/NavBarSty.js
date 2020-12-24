@@ -1,13 +1,16 @@
 import styled from 'styled-components';
-import { accent, front } from '../../../../styles/themes';
+import { primary, back, front } from '../../../../styles/themes';
 
 const NavBarSty = styled.nav`
-    position: relative;
+    position: sticky;
+    z-index: 2;
+    top: 0vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 50px;
-    background-color: ${accent};
+    background-color: ${primary};
+
     path {
         color: ${front};
     }
@@ -21,10 +24,10 @@ const NavBarSty = styled.nav`
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
-        width: 100vw;
-        height: 50px;
-        background: black;
-        bottom: -50px;
+        width: 100%;
+        height: 200px;
+        background: ${back};
+        bottom: -200px;
     }
 `;
 

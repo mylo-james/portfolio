@@ -1,12 +1,14 @@
 import SplashSty from './SplashSty';
-
 function Splash() {
     return (
-        <SplashSty>
-            <div>
-                <h1>Mylo James</h1>
-                <p>Develop with 'people first' in mind</p>
+        <SplashSty id='home'>
+            <div className='intro'>
+                <p className='name'>Mylo James</p>
+                <p>Fullstack Web Developer</p>
             </div>
+            <a className='go' href='#start'>
+                Let's go!
+            </a>
         </SplashSty>
     );
 }

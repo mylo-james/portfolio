@@ -1,11 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import ToggleThemeButton from '../../../../../components/ToggleThemeButton';
+import NavScroll from './NavScroll';
 
 function Sidebar() {
     return (
         <div className='sidebar'>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/potato'>Potato</NavLink>
+            <NavScroll to='#home' label='Home' />
+            <NavScroll to='#journey' label='Journey' />
+            <NavScroll to='#projects' label='Projects' />
+            <NavScroll to='#contact' label='Contact' />
+
             <ToggleThemeButton />
         </div>
     );

@@ -1,14 +1,18 @@
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import Hamburger from './components/Hamburger';
 import Sidebar from './components/Sidebar';
 import NavBarSty from './NavBarSty';
+export const NavBarContext = createContext();
+
 function NavBar() {
     const [open, setOpen] = useState(false);
     return (
-        <NavBarSty>
-            <Hamburger open={open} setOpen={setOpen} />
-            {open && <Sidebar />}
-        </NavBarSty>
+        <NavBarContext.Provider value={{ open, setOpen }}>
+            <NavBarSty id='start'>
+                <Hamburger />
+                {open && <Sidebar />}
+            </NavBarSty>
+        </NavBarContext.Provider>
     );
 }
 
