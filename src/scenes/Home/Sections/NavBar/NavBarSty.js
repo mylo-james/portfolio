@@ -29,6 +29,10 @@ const NavBarSty = styled.nav`
         background: ${back};
         bottom: -200px;
     }
+
+    .hamburger {
+        margin-right: 20px;
+    }
 `;
 
 export default NavBarSty;
