@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "year": "12/16",
+        "title": "Graduated with a BA in Applied Music",
+        "content": "Here is where I will put a few sentences about being a music major and how that has helped me to become a better programmer."
+    },
+    {
+        "id": 2,
+        "year": "02/20",
+        "title": "AppAcademy",
+        "content": "Here is where I will put a few sentences about how AppAcademy has helped me to become a better programmer."
+    },
+    {
+        "id": 3,
+        "year": "06/20",
+        "title": "Vibe",
+        "content": "Here is where I will put a few sentences about how my First Group Project has helped me to become a better programmer."
+    },
+    {
+        "id": 4,
+        "year": "02/20",
+        "title": "AppAcademy",
+        "content": "Here is where I will put a few sentences about how AppAcademy has helped me to become a better programmer."
+    },
+    {
+        "id": 5,
+        "year": "06/20",
+        "title": "Vibe",
+        "content": "Here is where I will put a few sentences about how my First Group Project has helped me to become a better programmer."
+    }
+]

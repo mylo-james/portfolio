@@ -1,12 +1,22 @@
-import { createContext, useState } from 'react';
-
+import { createContext, useContext, useEffect, useState } from 'react';
 import TimeNode from './components/TimeNode';
 import JourneySty from './JourneySty';
+import data from '../../../../timeline.json';
+import { ScrollContext } from '../../../../App';
 export const JourneyContext = createContext();
 
 function Journey() {
-   
+    const { yAxis } = useContext(ScrollContext);
     const [node, setNode] = useState(1);
+
+    useEffect(() => {
+        const maths = Math.floor((yAxis - 337) / 200);
+        setNode(maths < 2 ? 1 : maths);
+    }, [yAxis]);
+
+    useEffect(() => {
+        console.log(node, 'node');
+    }, [node]);
 
     return (
         <JourneySty>
@@ -16,11 +26,9 @@ function Journey() {
                     <p>Journey</p>
                 </div>
                 <div className='timeline'>
-                    <TimeNode num={1} />
-                    <TimeNode num={2} />
-                    <TimeNode num={3} />
-                    <TimeNode num={4} />
-                    <TimeNode num={5} />
+                    {data.map((data) => (
+                        <TimeNode key={data.id} data={data} />
+                    ))}
                 </div>
             </JourneyContext.Provider>
         </JourneySty>

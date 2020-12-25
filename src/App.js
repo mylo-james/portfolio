@@ -2,19 +2,25 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './scenes/Home';
 import NotFound from './scenes/NotFound';
 import './animations.css';
+import { createContext, useEffect, useState } from 'react';
+export const ScrollContext = createContext();
 
 function App() {
+    const [yAxis, setYAxis] = useState();
+
     return (
-        <>
-            <Switch>
-                <Route exact path='/'>
-                    <Home />
-                </Route>
-                <Route exact path='*'>
-                    <NotFound />
-                </Route>
-            </Switch>
-        </>
+        <ScrollContext.Provider value={{ yAxis }}>
+            <div className='app' onScroll={(e) => setYAxis(e.target.scrollTop)}>
+                <Switch>
+                    <Route exact path='/'>
+                        <Home />
+                    </Route>
+                    <Route exact path='*'>
+                        <NotFound />
+                    </Route>
+                </Switch>
+            </div>
+        </ScrollContext.Provider>
     );
 }
 

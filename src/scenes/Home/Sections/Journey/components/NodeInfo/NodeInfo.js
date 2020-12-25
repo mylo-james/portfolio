@@ -1,9 +1,11 @@
 import NodeInfoSty from './NodeInfoSty';
 
-function NodeInfo() {
+function NodeInfo({ data: { id, year, title, content } }) {
     return (
         <NodeInfoSty>
-            <div>NodeInfo</div>
+            <div>{year}</div>
+            <div>{title}</div>
+            <div>{content}</div>
             <div className='line' />
         </NodeInfoSty>
     );

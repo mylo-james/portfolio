@@ -9,16 +9,16 @@ const GlobalStyle = createGlobalStyle`
        scroll-behavior: smooth;
        width: 100vw;
    }
-   body a {
+   .app a {
        color: ${front};
        text-decoration: none;
      
    }
-   body a:visited {
+   .app a:visited {
        text-decoration: none;
        color: ${front}
    }
-   body {
+   .app {
        background: ${back};
        width: 100vw;
        height: 100vh;
@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
   }
 
-   body * {
+  .app * {
     box-sizing: border-box;
    }
 `;
