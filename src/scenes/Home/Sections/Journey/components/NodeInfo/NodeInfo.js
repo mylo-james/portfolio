@@ -5,7 +5,7 @@ function NodeInfo({ data: { id, year, title, content } }) {
         <NodeInfoSty>
             <div>{year}</div>
             <div>{title}</div>
-            <div>{content}</div>
+            <div className='content'>{content}</div>
             <div className='line' />
         </NodeInfoSty>
     );

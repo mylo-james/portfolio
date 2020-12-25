@@ -2,7 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './scenes/Home';
 import NotFound from './scenes/NotFound';
 import './animations.css';
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useState } from 'react';
 export const ScrollContext = createContext();
 
 function App() {
