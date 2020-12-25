@@ -8,9 +8,9 @@ function Hamburger() {
         setOpen((open) => !open);
     };
     return (
-        <>
+        <div className='hamburger'>
             <IoMenu onClick={toggleSideBar} />
-        </>
+        </div>
     );
 }
 

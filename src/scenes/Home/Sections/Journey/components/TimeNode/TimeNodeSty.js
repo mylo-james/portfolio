@@ -22,8 +22,8 @@ const TimeNodeSty = styled.div`
         height: 160px;
         width: 70vw;
         top: calc(-80px + ((30px + 6 * ((100vw - 320px) / 680)) / 2));
-        left: calc(((30px + 6 * ((100vw - 320px) / 680))) );
-      
+        left: calc(((30px + 6 * ((100vw - 320px) / 680))));
+
         padding: 20px;
         background: ${back};
     }
