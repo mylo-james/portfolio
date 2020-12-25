@@ -1,11 +1,12 @@
-import { createContext, useState } from 'react';
+import { createContext, useRef, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import TimeNode from './components/TimeNode';
 import JourneySty from './JourneySty';
 export const JourneyContext = createContext();
 
 function Journey() {
-    const [node, setNode] = useState(0);
+   
+    const [node, setNode] = useState(1);
 
     return (
         <JourneySty>

@@ -4,6 +4,7 @@ function NodeInfo() {
     return (
         <NodeInfoSty>
             <div>NodeInfo</div>
+            <div className='line' />
         </NodeInfoSty>
     );
 }

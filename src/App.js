@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import Home from './scenes/Home';
 import NotFound from './scenes/NotFound';
+import './animations.css';
 
 function App() {
     return (

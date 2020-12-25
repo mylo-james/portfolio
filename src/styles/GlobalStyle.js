@@ -20,12 +20,17 @@ const GlobalStyle = createGlobalStyle`
    body {
        background: ${back};
        height: 100vh;
+       box-sizing: border-box;
        font-family: 'Rubik', sans-serif;
        color: ${front};
        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
        overflow-y: scroll;
        -webkit-overflow-scrolling: touch;
 
+   }
+
+   body * {
+    box-sizing: border-box;
    }
 `;
 

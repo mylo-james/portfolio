@@ -1,30 +1,38 @@
 import TimeNodeSty from './TimeNodeSty';
 import { Waypoint } from 'react-waypoint';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { JourneyContext } from '../../Journey';
+import { GiNestedHexagons } from 'react-icons/gi';
 import NodeInfo from '../NodeInfo';
+import { CSSTransition } from 'react-transition-group';
 
 function TimeNode({ num }) {
     const { node, setNode } = useContext(JourneyContext);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        if (num === node) setIsVisible(true);
+        else setIsVisible(false);
+    }, [node, num]);
 
     const handleEnter = () => {
-        console.log(`${num} enter`);
         setNode(num);
     };
 
-    const handleLeave = () => {
-        console.log(`${num} leave`);
-    };
     return (
         <TimeNodeSty>
             <Waypoint
-                topOffset={'200px'}
-                bottomOffset={'400px'}
+                topOffset={'150px'}
+                bottomOffset={'500px'}
                 onEnter={handleEnter}
-                onLeave={handleLeave}
             />
-            <div>TimeNode</div>
-            {num === node && <NodeInfo />}
+            <div className='icon'>
+                <GiNestedHexagons />
+                <NodeInfo />
+                <CSSTransition in={isVisible} timeout={100} classNames='sample'>
+                    <div className='blocker' />
+                </CSSTransition>
+            </div>
         </TimeNodeSty>
     );
 }

@@ -1,0 +1,40 @@
+/* TODO Add site wide styles */
+/* .sample-appear {
+    transform: translateX(0);
+}
+
+.sample-appear-active {
+    transform: translateX(30vw);
+    transition: transform 300ms;
+}
+
+.sample-appear-done {
+    transform: translateX(60vw);
+} */
+.sample-enter {
+    transform: translateX(0);
+}
+
+.sample-enter-active {
+    transform: translateX(35vw);
+    transition: transform 250ms;
+}
+
+.sample-enter-done {
+    transform: translateX(70vw);
+    transition: transform 250ms;
+}
+
+.sample-exit {
+    transform: translateX(70vw);
+}
+
+.sample-exit-active {
+    transform: translateX(35vw);
+    transition: transform 250ms;
+}
+
+.sample-exit-done {
+    transform: translateX(0);
+    transition: transform 250ms;
+}
