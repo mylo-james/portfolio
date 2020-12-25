@@ -1,40 +1,17 @@
-/* TODO Add site wide styles */
-/* .sample-appear {
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.alert-enter-active {
+    opacity: 1;
     transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
 }
-
-.sample-appear-active {
-    transform: translateX(30vw);
-    transition: transform 300ms;
+.alert-exit {
+    opacity: 1;
 }
-
-.sample-appear-done {
-    transform: translateX(60vw);
-} */
-.sample-enter {
-    transform: translateX(0);
-}
-
-.sample-enter-active {
-    transform: translateX(35vw);
-    transition: transform 250ms;
-}
-
-.sample-enter-done {
-    transform: translateX(70vw);
-    transition: transform 250ms;
-}
-
-.sample-exit {
-    transform: translateX(70vw);
-}
-
-.sample-exit-active {
-    transform: translateX(35vw);
-    transition: transform 250ms;
-}
-
-.sample-exit-done {
-    transform: translateX(0);
-    transition: transform 250ms;
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
 }

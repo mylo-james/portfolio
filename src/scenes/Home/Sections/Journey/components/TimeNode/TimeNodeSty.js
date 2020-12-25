@@ -6,6 +6,7 @@ const TimeNodeSty = styled.div`
     display: flex;
     align-items: center;
     height: 200px;
+    overflow-x: hidden;
 
     .icon {
         position: relative;
