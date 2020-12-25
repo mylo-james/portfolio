@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
    ${reset}
    html {
        scroll-behavior: smooth;
+       width: 100vw;
    }
    body a {
        color: ${front};
@@ -19,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
    }
    body {
        background: ${back};
+       width: 100vw;
        height: 100vh;
        box-sizing: border-box;
        font-family: 'Rubik', sans-serif;
@@ -26,8 +28,23 @@ const GlobalStyle = createGlobalStyle`
        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
        overflow-y: scroll;
        -webkit-overflow-scrolling: touch;
+       overflow-x: hidden;
 
    }
+
+   ::-webkit-scrollbar {
+    width: 12px;
+   }
+ 
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
 
    body * {
     box-sizing: border-box;
