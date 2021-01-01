@@ -1,27 +1,16 @@
 import styled from 'styled-components';
+import data from '../../../../timeline.json';
 
 const JourneySty = styled.div`
     position: relative;
-    height: 1040px;
+    height: ${data.length * 250}px;
     border: 1px solid white;
 
-    .anchor {
-        position: absolute;
-        top: -51px;
-    }
-
-    .waypoint {
-        position: absolute;
-        top: -51px;
-    }
-
-    .title {
-        height: 30px;
-        border: white 1px solid;
-    }
-
     .timeline {
-        height: calc(100% - 30px);
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        height: calc(100% - 50px);
     }
 `;
 

@@ -1,10 +1,10 @@
+import Title from '../../../../components/Title';
 import ProjectsSty from './ProjectsSty';
 
 function Projects() {
     return (
         <ProjectsSty>
-            <div className='anchor' id='projects' />
-            <div>Projects</div>
+            <Title title={'Projects'} id={'projects'} />
         </ProjectsSty>
     );
 }

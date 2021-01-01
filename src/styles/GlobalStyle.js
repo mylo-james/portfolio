@@ -5,8 +5,9 @@ import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
    ${reset}
+ 
+
    html {
-       scroll-behavior: smooth;
        width: 100vw;
    }
    .app a {
@@ -29,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
        overflow-y: scroll;
        -webkit-overflow-scrolling: touch;
        overflow-x: hidden;
+       scroll-behavior: smooth;
 
    }
 

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const ProjectsSty = styled.div`
-    height: 500px;
+    height: calc(100vh - 50px);
     position: relative;
     border: white 1px solid;
 
-    .anchor {
+    #projects {
         position: absolute;
         top: -51px;
     }

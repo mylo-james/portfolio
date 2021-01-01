@@ -1,10 +1,10 @@
+import Title from '../../../../components/Title';
 import ContactSty from './ContactSty';
 
 function Contact() {
     return (
         <ContactSty>
-            <div className='anchor' id='contact' />
-            <p>Contact</p>
+            <Title title={'Contact Me'} id={'contact'} />
         </ContactSty>
     );
 }

@@ -3,30 +3,24 @@
         "id": 1,
         "year": "12/16",
         "title": "BA in Music",
-        "content": "Here is where I will put a few sentences about being a music major and how that has helped me to become a better programmer."
+        "content": "Getting my Bachelor's in Music gave the me self-discipline, creativity, and introspection to be an outstanding problem-solver. "
     },
     {
         "id": 2,
         "year": "02/20",
         "title": "AppAcademy",
-        "content": "Here is where I will put a few sentences about how AppAcademy has helped me to become a better programmer."
+        "content": "AppAcademy is an rigorous 24-course that taught me technologies that would help me land my first developer job."
     },
     {
         "id": 3,
-        "year": "06/20",
-        "title": "Vibe",
-        "content": "Here is where I will put a few sentences about how my First Group Project has helped me to become a better programmer."
+        "year": "08/20",
+        "title": "Instructional Assistant",
+        "content": "After completing AppAcademy, I was asked to join the team! I helped students by answering questions and debugging code. While learning more about our technologies, specifically React/Redux/CSS/HTML"
     },
     {
         "id": 4,
-        "year": "02/20",
-        "title": "AppAcademy",
-        "content": "Here is where I will put a few sentences about how AppAcademy has helped me to become a better programmer."
-    },
-    {
-        "id": 5,
-        "year": "06/20",
-        "title": "Vibe",
-        "content": "Here is where I will put a few sentences about how my First Group Project has helped me to become a better programmer."
+        "year": "2021",
+        "title": "Next Step",
+        "content": "I am currently looking for a software developer positions to add to my journey."
     }
 ]

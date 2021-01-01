@@ -3,6 +3,7 @@ import TimeNode from './components/TimeNode';
 import JourneySty from './JourneySty';
 import data from '../../../../timeline.json';
 import { ScrollContext } from '../../../../App';
+import Title from '../../../../components/Title';
 export const JourneyContext = createContext();
 
 function Journey() {
@@ -21,10 +22,7 @@ function Journey() {
     return (
         <JourneySty>
             <JourneyContext.Provider value={{ node, setNode }}>
-                <div className='anchor' id='journey'></div>
-                <div className='title'>
-                    <p>Journey</p>
-                </div>
+                <Title title={'My Journey'} id={'journey'} />
                 <div className='timeline'>
                     {data.map((data) => (
                         <TimeNode key={data.id} data={data} />

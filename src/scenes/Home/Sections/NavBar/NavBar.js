@@ -8,7 +8,7 @@ function NavBar() {
     const [open, setOpen] = useState(false);
     return (
         <NavBarContext.Provider value={{ open, setOpen }}>
-            <NavBarSty id='start'>
+            <NavBarSty>
                 <Hamburger />
                 {open && <Sidebar />}
             </NavBarSty>
