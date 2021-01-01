@@ -14,7 +14,8 @@
         "react-transition-group": "^4.4.1",
         "styled-components": "^5.2.1",
         "styled-reset": "^4.3.3",
-        "styled-theming": "^2.2.0"
+        "styled-theming": "^2.2.0",
+        "swiper": "^6.4.5"
     },
     "scripts": {
         "start": "react-scripts start",

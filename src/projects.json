@@ -1,0 +1,15 @@
+[
+    { "id": 1, "title": "Vibe" },
+    {
+        "id": 2,
+        "title": "SafeSpace"
+    },
+    {
+        "id": 3,
+        "title": "Isn'tgram"
+    },
+    {
+        "id": 4,
+        "title": "Aura"
+    }
+]
