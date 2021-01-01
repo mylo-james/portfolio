@@ -11,13 +11,9 @@ function Journey() {
     const [node, setNode] = useState(1);
 
     useEffect(() => {
-        const maths = Math.floor((yAxis - 337) / 200);
+        const maths = Math.floor((yAxis - window.innerHeight / 2 + 90) / 240);
         setNode(maths < 2 ? 1 : maths);
     }, [yAxis]);
-
-    useEffect(() => {
-        console.log(node, 'node');
-    }, [node]);
 
     return (
         <JourneySty>

@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 import { back } from '../../../../../../styles/themes';
 
+const svgInitial = '50px';
+const svgHeight = `calc(${svgInitial} + 6 * ((100vw - 320px) / 680));`;
+
 const TimeNodeSty = styled.div`
     position: relative;
     display: flex;
     align-items: center;
     height: 200px;
-    overflow-x: hidden;
+    width: calc(100% - 1px);
+    overflow: hidden;
 
     .icon {
         position: relative;
@@ -14,16 +18,16 @@ const TimeNodeSty = styled.div`
     }
 
     svg {
-        height: calc(30px + 6 * ((100vw - 320px) / 680));
-        width: calc(30px + 6 * ((100vw - 320px) / 680));
+        height: ${svgHeight}
+        width: ${svgHeight}
     }
 
     .blocker {
         position: absolute;
-        height: 160px;
-        width: 70vw;
-        top: calc(-80px + ((30px + 6 * ((100vw - 320px) / 680)) / 2));
-        left: calc(((30px + 6 * ((100vw - 320px) / 680))));
+        height: 100vh;
+        width: 100vw;
+        top: -200%;
+        left: ${svgHeight};
         padding: 20px;
         background: ${back};
     }

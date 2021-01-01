@@ -9,8 +9,10 @@ function NavBar() {
     return (
         <NavBarContext.Provider value={{ open, setOpen }}>
             <NavBarSty>
-                <Hamburger />
-                {open && <Sidebar />}
+                <div className='hamburger'>
+                    <Hamburger />
+                    {open && <Sidebar />}
+                </div>
             </NavBarSty>
         </NavBarContext.Provider>
     );

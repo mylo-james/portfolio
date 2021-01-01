@@ -16,21 +16,21 @@
 }
 
 .slide-enter-active {
-    transform: translateX(35vw);
+    transform: translateX(50vw);
     transition: transform 250ms;
 }
 
 .slide-enter-done {
-    transform: translateX(70vw);
+    transform: translateX(100vw);
     transition: transform 250ms;
 }
 
 .slide-exit {
-    transform: translateX(70vw);
+    transform: translateX(100vw);
 }
 
 .slide-exit-active {
-    transform: translateX(35vw);
+    transform: translateX(50vw);
     transition: transform 250ms;
 }
 

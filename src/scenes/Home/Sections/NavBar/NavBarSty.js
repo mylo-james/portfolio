@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primary, back, front } from '../../../../styles/themes';
+import { primary, accent, secondary, front } from '../../../../styles/themes';
 
 const NavBarSty = styled.nav`
     position: sticky;
@@ -14,25 +14,43 @@ const NavBarSty = styled.nav`
     path {
         color: ${front};
     }
+
     svg {
         height: 40px;
         width: 40px;
-        margin: 10px;
+    }
+
+    svg:hover {
+        path {
+            color: ${accent}
+        }
     }
     .sidebar {
         position: absolute;
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
-        width: 100%;
+        min-width: 200px;
+        max-width: 200px;
+        width: 90vw;
         height: 200px;
-        background: ${back};
-        bottom: -200px;
+        background: ${secondary};
+        top: 100%;
+        right 5px;
+        border: 1px ${front} solid;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sidebar *:hover {
+        color: ${accent};
     }
 
     .hamburger {
-        margin-right: 20px;
+        position: relative;
+        margin-right: 5px;
     }
+
 `;
 
 export default NavBarSty;

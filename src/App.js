@@ -10,7 +10,12 @@ function App() {
 
     return (
         <ScrollContext.Provider value={{ yAxis }}>
-            <div className='app' onScroll={(e) => setYAxis(e.target.scrollTop)}>
+            <div
+                className='app'
+                onScroll={(e) => {
+                    setYAxis(e.target.scrollTop);
+                }}
+            >
                 <Switch>
                     <Route exact path='/'>
                         <Home />

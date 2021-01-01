@@ -1,4 +1,4 @@
-import ToggleThemeButton from '../../components/ToggleThemeButton';
+import ToggleThemeButton from '../../components/ToggleTheme';
 import NotFoundSty from './NotFoundSty';
 
 function NotFound() {
