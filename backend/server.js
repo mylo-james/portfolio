@@ -3,10 +3,10 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-router.use(express.static(path.resolve('../frontend/build')));
+app.use(express.static(path.resolve('../frontend/build')));
 
 app.get('*', (req, res) => {
-    path.resolve(__dirname, '../../frontend', 'build', 'index.html');
+    path.resolve(__dirname, '../frontend', 'build', 'index.html');
 });
 
 app.listen(port, () => {
