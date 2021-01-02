@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { accent, front, secondary } from '../../../../styles/themes';
 
 const ContactSty = styled.div`
+    position: relative;
     height: 570px;
     border: 1px solid ${front};
-    position: relative;
     padding: 20px;
 
     label {
@@ -81,8 +81,6 @@ const ContactSty = styled.div`
   
     @media screen and (max-width: 875px ) {
         height: 1100px;
-      
-        padding: 0px;
 
         .content {
             flex-flow: column;
