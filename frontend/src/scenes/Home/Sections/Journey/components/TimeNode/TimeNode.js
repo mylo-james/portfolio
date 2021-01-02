@@ -19,11 +19,11 @@ function TimeNode({ data }) {
         <TimeNodeSty isVisible={isVisible}>
             <div className='icon'>
                 <GiNestedHexagons />
-                <NodeInfo data={data} />
-                <CSSTransition in={isVisible} timeout={100} classNames='slide'>
-                    <div className='blocker' />
-                </CSSTransition>
             </div>
+            <NodeInfo data={data} />
+            <CSSTransition in={isVisible} timeout={100} classNames='slide'>
+                <div className='blocker' />
+            </CSSTransition>
         </TimeNodeSty>
     );
 }

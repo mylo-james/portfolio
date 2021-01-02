@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 import { back, primary, secondary } from '../../../../../../styles/themes';
 
+const svgInitial = '75px';
+const svgHeight = `${svgInitial} + 6 * ((100vw - 320px) / 680);`;
+const evenSpace = `(45vw - (${svgHeight})) / 3`;
+
 const NodeInfoSty = styled.div`
-    position: absolute;
     background: ${primary};
+    position: relative;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
     height: 160px;
-    width: 45vw;
-    top: calc(-80px + ((50px + 6 * ((100vw - 320px) / 680)) / 2));
-    left: calc(((50px + 6 * ((100vw - 320px) / 680))) + 10vw);
+    width: 55vw;
     border: ${secondary} solid 4px;
     border-radius: 4px;
-    padding: 20px;
+    padding: 10px;
     .content {
         font-size: 0.7em;
     }
@@ -21,8 +23,8 @@ const NodeInfoSty = styled.div`
     .line {
         position: absolute;
         top: 74px;
-        left: -10vw;
-        width: 10vw;
+        right: 100%;
+        width: calc(${evenSpace});
         border: ${secondary} solid 2px;
         border-radius: 4px;
     }

@@ -31,18 +31,24 @@ const ContactSty = styled.div`
     .info {
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
+        justify-content: space-between;
         min-width: 380px;
     }
 
-  
+    .info-info {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 40%;
+       
+    }
 
     .links {
-        height: 30%;
+        height: 60px;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+       
 
         svg, .angel {
             height: 50px;
@@ -75,7 +81,7 @@ const ContactSty = styled.div`
     .info button {
         width: 50%;
         align-self: center;
-        margin: 20px;
+
     }
 
   
@@ -99,22 +105,6 @@ const ContactSty = styled.div`
         }
     }
 
-    table {
-        margin: auto;
-       
-    }
-
-    td {
-       padding: 10px;
-    }
-
-    td:first-child {
-        text-align: right;
-    }
-
-    .email {
-        font-size: .9em;
-    }
 
    
 `;

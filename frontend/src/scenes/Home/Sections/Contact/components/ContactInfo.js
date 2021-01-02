@@ -16,30 +16,13 @@ function ContactInfo() {
     } = contactInfo;
     return (
         <div className='info'>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Name:</td>
-                        <td>{name}</td>
-                    </tr>
-                    <tr>
-                        <td>Address:</td>
-                        <td>{address}</td>
-                    </tr>
-                    <tr>
-                        <td>{/* Blank for Space*/}</td>
-                        <td>{`${city}, ${state} ${zip}`}</td>
-                    </tr>
-                    <tr>
-                        <td>Phone:</td>
-                        <td>{phone}</td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td className='email'>{email}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className='info-info'>
+                <div>{name}</div>
+                <div>{address}</div>
+                <div>{`${city}, ${state} ${zip}`}</div>
+                <div>{phone}</div>
+                <div className='email'>{email}</div>
+            </div>
             <button onClick={() => window.open(resume)}>Download Resume</button>
             <div className='links'>
                 <SiLinkedin onClick={() => window.open(linkedIn)} />
