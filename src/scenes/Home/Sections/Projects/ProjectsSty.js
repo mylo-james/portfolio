@@ -6,7 +6,7 @@ const slideHeight = '70%';
 const ProjectsSty = styled.div`
     height: 700px;
     position: relative;
-    border: white 1px solid;
+    border: ${front} 1px solid;
     padding: 20px;
 
     #projects {

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { primary } from '../../../../../../styles/themes';
+import { back, primary, secondary } from '../../../../../../styles/themes';
 
 const NodeInfoSty = styled.div`
     position: absolute;
+    background: ${primary};
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -10,7 +11,7 @@ const NodeInfoSty = styled.div`
     width: 60vw;
     top: calc(-80px + ((50px + 6 * ((100vw - 320px) / 680)) / 2));
     left: calc(((50px + 6 * ((100vw - 320px) / 680))) + 10vw);
-    border: white solid 4px;
+    border: ${secondary} solid 4px;
     border-radius: 4px;
     padding: 20px;
     .content {
@@ -22,13 +23,12 @@ const NodeInfoSty = styled.div`
         top: 74px;
         left: -10vw;
         width: 10vw;
-        border: white solid 2px;
+        border: ${secondary} solid 2px;
         border-radius: 4px;
     }
 
     .title {
-        color: ${primary};
-    }
+        color: ${back};
 `;
 
 export default NodeInfoSty;

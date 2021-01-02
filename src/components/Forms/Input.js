@@ -6,6 +6,7 @@ const StyledInput = styled.input`
     margin: 5px;
     height: 35px;
     font-size: 0.7em;
+    font-family: 'Rubik', sans-serif;
 
     :focus {
         outline: none;
@@ -16,6 +17,8 @@ const StyledInput = styled.input`
 const StyledTextArea = styled.textarea`
     margin: 5px;
     height: 100px;
+    font-size: 0.7em;
+    font-family: 'Rubik', sans-serif;
 
     :focus {
         outline: none;

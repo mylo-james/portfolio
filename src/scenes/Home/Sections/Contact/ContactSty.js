@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { accent, secondary } from '../../../../styles/themes';
+import { accent, front, secondary } from '../../../../styles/themes';
 
 const ContactSty = styled.div`
     height: 570px;
-    border: 1px solid white;
+    border: 1px solid ${front};
     position: relative;
     padding: 20px;
 

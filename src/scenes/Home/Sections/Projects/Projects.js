@@ -36,7 +36,6 @@ function Projects() {
                     slideShadows: true,
                     slidesPerView: 2,
                 }}
-                scrollbar={{ draggable: true }}
             >
                 {projects.map((project) => (
                     <SwiperSlide key={`project-${project.id}`}>
