@@ -12,8 +12,6 @@ const LineSty = styled.div`
         transform: translateY(101vh);
         background: ${secondary};
         border-radius: 50%;
-        animation: fall ${(props) => props.duration}s linear
-            ${(props) => props.delay}s infinite;
     }
 `;
 

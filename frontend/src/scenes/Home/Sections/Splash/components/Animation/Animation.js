@@ -6,12 +6,12 @@ function Animation() {
     const [lines, setLines] = useState([]);
 
     const randInt = () => {
-        return Math.random() * (4 - 0.3) + 0.3;
+        return Math.random() * (10 - 2) + 2;
     };
 
     useEffect(() => {
         const res = [];
-        for (let i = 0; i < 199; i++) {
+        for (let i = 0; i < 500; i++) {
             res.push({
                 id: i,
                 delay: randInt(),
