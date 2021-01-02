@@ -11,7 +11,7 @@ function Journey() {
     const [node, setNode] = useState(1);
 
     useEffect(() => {
-        const maths = Math.floor((yAxis - window.innerHeight / 2 + 90) / 240);
+        const maths = Math.floor((yAxis - window.innerHeight / 2 + 50) / 240);
         setNode(maths < 2 ? 1 : maths);
     }, [yAxis]);
 

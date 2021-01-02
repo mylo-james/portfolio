@@ -1,15 +1,30 @@
 [
-    { "id": 1, "title": "Vibe" },
+    {
+        "id": 1,
+        "title": "Vibe",
+        "image": "vibe.jpeg",
+        "info": "A Spotify clone written with VanillaJS andExpress",
+        "url": "https://aa-vibe-app.herokuapp.com/"
+    },
     {
         "id": 2,
-        "title": "SafeSpace"
+        "title": "SafeSpace",
+        "image": "safespace.png",
+        "info": "A roommate finding application the LGBTQIA+ affinity written with React, Redux, and Express",
+        "url": "https://safespace-mjames.herokuapp.com/"
     },
     {
         "id": 3,
-        "title": "Isn'tgram"
+        "title": "Isn'tgram",
+        "image": "isntgram.png",
+        "info": "An Instagram clone written with React Hooks and Context, and Flask",
+        "url": "https://isntgram.herokuapp.com/auth/login"
     },
     {
         "id": 4,
-        "title": "Aura"
+        "title": "Aura",
+        "image": "aura.png",
+        "info": "A mood tracking app made with React Native",
+        "url": "https://appetize.io/app/2f9520zfrxeyddr6yqbz067m48?device=iphone11pro&scale=75&orientation=portrait&osVersion=13.3&deviceColor=black"
     }
 ]

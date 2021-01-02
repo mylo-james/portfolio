@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { back } from '../../../../../../styles/themes';
+import { accent, back, secondary } from '../../../../../../styles/themes';
 
 const svgInitial = '50px';
 const svgHeight = `calc(${svgInitial} + 6 * ((100vw - 320px) / 680));`;
@@ -20,6 +20,12 @@ const TimeNodeSty = styled.div`
     svg {
         height: ${svgHeight}
         width: ${svgHeight}
+    }
+
+   
+
+    path {
+        color: ${({ isVisible }) => (isVisible ? accent : secondary)}
     }
 
     .blocker {

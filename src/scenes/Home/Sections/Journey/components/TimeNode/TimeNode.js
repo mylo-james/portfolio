@@ -16,7 +16,7 @@ function TimeNode({ data }) {
     }, [node, id]);
 
     return (
-        <TimeNodeSty>
+        <TimeNodeSty isVisible={isVisible}>
             <div className='icon'>
                 <GiNestedHexagons />
                 <NodeInfo data={data} />

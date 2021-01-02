@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { primary } from '../../../../../../styles/themes';
 
 const NodeInfoSty = styled.div`
     position: absolute;
@@ -23,6 +24,10 @@ const NodeInfoSty = styled.div`
         width: 10vw;
         border: white solid 2px;
         border-radius: 4px;
+    }
+
+    .title {
+        color: ${primary};
     }
 `;
 

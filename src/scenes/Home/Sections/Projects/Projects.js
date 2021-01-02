@@ -19,31 +19,31 @@ function Projects() {
     return (
         <ProjectsSty>
             <Title title={'Projects'} id={'projects'} />
-            <div className='swiperWrapper'>
-                <Swiper
-                    effect='coverflow'
-                    navigation
-                    grabCursor={true}
-                    centeredSlides={true}
-                    slidesPerView='auto'
-                    autoplay={{ delay: 3000 }}
-                    loop
-                    coverflowEffect={{
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    }}
-                    scrollbar={{ draggable: true }}
-                >
-                    {projects.map((project) => (
-                        <SwiperSlide key={`project-${project.id}`}>
-                            <ProjectItem data={project} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+
+            <Swiper
+                effect='coverflow'
+                navigation
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView='auto'
+                loop
+                autoplay={{ delay: 3000 }}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 0,
+                    modifier: 1,
+                    slideShadows: true,
+                    slidesPerView: 2,
+                }}
+                scrollbar={{ draggable: true }}
+            >
+                {projects.map((project) => (
+                    <SwiperSlide key={`project-${project.id}`}>
+                        <ProjectItem data={project} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </ProjectsSty>
     );
 }

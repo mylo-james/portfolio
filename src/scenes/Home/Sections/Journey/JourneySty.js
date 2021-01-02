@@ -5,6 +5,7 @@ const JourneySty = styled.div`
     position: relative;
     height: ${data.length * 250}px;
     border: 1px solid white;
+    padding: 20px;
 
     .timeline {
         display: flex;
