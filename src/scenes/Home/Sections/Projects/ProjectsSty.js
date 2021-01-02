@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { front, primary } from '../../../../styles/themes';
 
-const slideHeight = '70%';
+const slideHeight = '100%';
 
 const ProjectsSty = styled.div`
-    height: 700px;
+    height: 600px;
     position: relative;
     border: ${front} 1px solid;
     padding: 20px;
@@ -15,9 +15,11 @@ const ProjectsSty = styled.div`
     }
 
     .swiper-container {
+        margin-top: 40px;
         height: calc(100% - 70px);
         width: 100%;
         max-width: 1000px;
+        padding: 30px;
     }
 
     .swiper-slide {
@@ -25,7 +27,7 @@ const ProjectsSty = styled.div`
         max-width: 300px;
         width: 30%;
         height: ${slideHeight};
-        margin-top: calc(50% - (${slideHeight} / 2) - 100px);
+        margin-top: calc(50% - (${slideHeight} / 2));
     }
 
     .swiper-slide:hover {

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { accent } from '../styles/themes';
 
 const TitleSty = styled.div`
-    height: 70px;
+    height: 30px;
     font-size: 1.5em;
     color: ${accent};
 `;

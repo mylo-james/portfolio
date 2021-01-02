@@ -7,7 +7,6 @@ const ContactSty = styled.div`
     position: relative;
     padding: 20px;
 
-
     label {
         display: none;
     }
@@ -15,14 +14,14 @@ const ContactSty = styled.div`
     .content {
         display: flex;
         justify-content: space-around;
-        width: calc(100% - 40px;)
+        width: calc(100% - 40px)
         height: 100%;
     }
 
     .form, .info {
         padding: 20px;
         background: ${secondary};
-       margin: 20px;
+        margin: 20px;
         width: 50%;
         height: 400px;
         max-width: 600px;
@@ -40,6 +39,7 @@ const ContactSty = styled.div`
 
     .links {
         height: 30%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -80,17 +80,24 @@ const ContactSty = styled.div`
 
   
     @media screen and (max-width: 875px ) {
-        height: 1000px;
+        height: 1100px;
+      
+        padding: 0px;
 
         .content {
             flex-flow: column;
+            width: 100%;
+            padding: 0px;
+            
         }
 
         .info, .form {
+            padding: 20px;
             margin: 20px auto;
-           width: 70%;
+           width: 100%;
+           min-width: 0px;
            max-width: 700px;
-           min-width: 450px;
+          
         }
     }
 
@@ -105,6 +112,10 @@ const ContactSty = styled.div`
 
     td:first-child {
         text-align: right;
+    }
+
+    .email {
+        font-size: .9em;
     }
 
    

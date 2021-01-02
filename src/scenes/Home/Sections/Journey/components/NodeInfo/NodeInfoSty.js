@@ -8,7 +8,7 @@ const NodeInfoSty = styled.div`
     flex-flow: column;
     justify-content: space-around;
     height: 160px;
-    width: 60vw;
+    width: 45vw;
     top: calc(-80px + ((50px + 6 * ((100vw - 320px) / 680)) / 2));
     left: calc(((50px + 6 * ((100vw - 320px) / 680))) + 10vw);
     border: ${secondary} solid 4px;

@@ -36,7 +36,7 @@ function ContactInfo() {
                     </tr>
                     <tr>
                         <td>Email:</td>
-                        <td>{email}</td>
+                        <td className='email'>{email}</td>
                     </tr>
                 </tbody>
             </table>
