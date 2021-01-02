@@ -3,6 +3,8 @@ import Home from './scenes/Home';
 import NotFound from './scenes/NotFound';
 import './animations.css';
 import { createContext, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const ScrollContext = createContext();
 
 function App() {
@@ -10,6 +12,17 @@ function App() {
 
     return (
         <ScrollContext.Provider value={{ yAxis }}>
+            <ToastContainer
+                position='top-right'
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover
+            />
             <div
                 className='app'
                 onScroll={(e) => {

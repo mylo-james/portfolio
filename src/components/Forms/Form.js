@@ -13,14 +13,18 @@ export default function Form({
     children,
     onSubmit,
     style = {},
+    disabled,
     submitButton,
 }) {
     const [formFields, setFormFields] = useState({});
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (onSubmit) {
-            onSubmit(e);
+            const status = await onSubmit(e);
+            if (status === 200) {
+                setFormFields({});
+            }
         } else {
             console.log(
                 "Please add an onSumbit to your Form... This is your form's current state:"
@@ -42,7 +46,11 @@ export default function Form({
                           : child
                   )
                 : cloneElement(children, { formFields, setFormFields })}
-            {submitButton && <button type='submit'>Submit</button>}
+            {submitButton && (
+                <button disabled={disabled} type='submit'>
+                    Submit
+                </button>
+            )}
         </StyledForm>
     );
 }

@@ -1,14 +1,28 @@
 import { useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { back, front } from './themes';
+import { back, front, accent, cursor } from './themes';
 import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
    ${reset}
- 
+
+   
+    button {
+        font-size: 0.8em;
+        border: 3px ${front} solid;
+        padding: 10px;
+        background: none;
+        color: ${front}
+    }
+
+    button:hover {
+        color: ${accent};
+        border: 3px ${accent} solid;
+    }
 
    html {
        width: 100vw;
+       cursor: ${cursor}
    }
    .app a {
        color: ${front};
@@ -26,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
        box-sizing: border-box;
        font-family: 'Rubik', sans-serif;
        color: ${front};
-       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+       font-size: calc(16px + 4 * ((100vw - 320px) / 680));
        overflow-y: scroll;
        -webkit-overflow-scrolling: touch;
        overflow-x: hidden;
@@ -55,9 +69,10 @@ const GlobalStyle = createGlobalStyle`
 
 const GlobalStyleWrapper = ({ children }) => {
     const [mode, setMode] = useState('dark');
+    const [cursor, setCursor] = useState('default');
 
     return (
-        <ThemeProvider theme={{ mode, setMode }}>
+        <ThemeProvider theme={{ mode, setMode, cursor, setCursor }}>
             <GlobalStyle />
             {children}
         </ThemeProvider>

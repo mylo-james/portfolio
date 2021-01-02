@@ -10,7 +10,7 @@ import 'swiper/swiper-bundle.css';
 import Title from '../../../../components/Title';
 import ProjectsSty from './ProjectsSty';
 
-import projects from '../../../../projects.json';
+import projects from '../../../../data/projects.json';
 import ProjectItem from './components/ProjectItem';
 
 SwiperCore.use([Navigation, Autoplay, EffectCoverflow, A11y]);

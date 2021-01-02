@@ -1,11 +1,27 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import { accent } from '../../styles/themes';
 
 const StyledInput = styled.input`
     margin: 5px;
+    height: 35px;
+    font-size: 0.7em;
+
+    :focus {
+        outline: none;
+        border: ${accent} 3px solid;
+    }
 `;
 
-const StyledTextArea = styled.textarea``;
+const StyledTextArea = styled.textarea`
+    margin: 5px;
+    height: 100px;
+
+    :focus {
+        outline: none;
+        border: ${accent} 3px solid;
+    }
+`;
 
 export default function Input({
     name,
@@ -16,6 +32,7 @@ export default function Input({
     required = false,
     setFormFields,
     formFields,
+    disabled,
 }) {
     useEffect(() => {
         initValue &&
@@ -37,6 +54,7 @@ export default function Input({
     };
 
     const props = {
+        disabled,
         required,
         onChange,
         id: `${name}Input`,

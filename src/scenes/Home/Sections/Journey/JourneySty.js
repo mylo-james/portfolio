@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import data from '../../../../timeline.json';
+import data from '../../../../data/timeline.json';
 
 const JourneySty = styled.div`
     position: relative;

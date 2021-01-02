@@ -20,3 +20,9 @@ export const back = theme('mode', {
     light: '#FFFDED',
     dark: '#2D3142',
 });
+
+export const cursor = theme('cursor', {
+    wait: 'wait',
+    progress: 'progress',
+    default: 'default',
+});

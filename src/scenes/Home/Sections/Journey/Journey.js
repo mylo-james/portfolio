@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import TimeNode from './components/TimeNode';
 import JourneySty from './JourneySty';
-import data from '../../../../timeline.json';
+import data from '../../../../data/timeline.json';
 import { ScrollContext } from '../../../../App';
 import Title from '../../../../components/Title';
 export const JourneyContext = createContext();
