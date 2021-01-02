@@ -31,7 +31,6 @@ const TimeNodeSty = styled.div`
         position: absolute;
         height: 100vh;
         width: 100vw;
-
         padding: 20px;
         background: ${back};
     }

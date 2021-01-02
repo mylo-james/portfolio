@@ -16,6 +16,7 @@ const NodeInfoSty = styled.div`
     border: ${secondary} solid 4px;
     border-radius: 4px;
     padding: 10px;
+;
     .content {
         font-size: 0.7em;
     }

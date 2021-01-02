@@ -8,7 +8,7 @@ import { CSSTransition } from 'react-transition-group';
 function TimeNode({ data }) {
     const id = Number.parseInt(data.id);
     const { node } = useContext(JourneyContext);
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
         if (id === node) setIsVisible(true);
@@ -20,9 +20,13 @@ function TimeNode({ data }) {
             <div className='icon'>
                 <GiNestedHexagons />
             </div>
-            <NodeInfo data={data} />
-            <CSSTransition in={isVisible} timeout={100} classNames='slide'>
-                <div className='blocker' />
+            <CSSTransition
+                in={isVisible}
+                timeout={100}
+                appear
+                classNames='flip'
+            >
+                <NodeInfo data={data} />
             </CSSTransition>
         </TimeNodeSty>
     );

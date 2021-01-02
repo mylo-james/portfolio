@@ -1,40 +1,38 @@
-/* TODO Add site wide styles */
-.sample-appear {
-    transform: translateX(0);
+.flip-enter,
+.flip-appear {
+    transform: rotateX(90deg);
 }
 
-.sample-appear-active {
-    transform: translateX(30vw);
-    transition: transform 300ms;
-}
-
-.sample-appear-done {
-    transform: translateX(60vw);
-}
-.slide-enter {
-    transform: translateX(0);
-}
-
-.slide-enter-active {
-    transform: translateX(50vw);
+.flip-enter-active {
+    transform: rotateX(45deg);
     transition: transform 250ms;
 }
 
-.slide-enter-done {
-    transform: translateX(100vw);
+.flip-enter-done {
+    transform: rotateX(0deg);
     transition: transform 250ms;
 }
 
-.slide-exit {
-    transform: translateX(100vw);
+.flip-exit {
+    transform: rotateX(0deg);
 }
 
-.slide-exit-active {
-    transform: translateX(50vw);
+.flip-exit-active {
+    transform: rotateX(-45deg);
     transition: transform 250ms;
 }
 
-.slide-exit-done {
-    transform: translateX(0);
+.flip-exit-done {
+    transform: rotateX(-90deg);
     transition: transform 250ms;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
 }

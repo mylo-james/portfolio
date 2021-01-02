@@ -1,7 +1,9 @@
+import Animation from './components/Animation/Animation';
 import SplashSty from './SplashSty';
 function Splash() {
     return (
         <SplashSty id='home'>
+            <Animation/>
             <div className='intro'>
                 <p className='name'>Mylo James</p>
                 <p>Fullstack Web Developer</p>
@@ -14,3 +16,4 @@ function Splash() {
 }
 
 export default Splash;
+ 

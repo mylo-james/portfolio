@@ -7,6 +7,9 @@ const SplashSty = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
 
     .intro {
         text-align: center;

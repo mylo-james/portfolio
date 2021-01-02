@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
        color: ${front}
    }
    .app {
-       background: ${back};
+      background: radial-gradient(circle, ${back}, #06051f);
        width: 100vw;
        height: 100vh;
        box-sizing: border-box;
