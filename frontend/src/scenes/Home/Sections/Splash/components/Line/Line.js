@@ -6,7 +6,7 @@ function Line({ delay, duration }) {
             <div
                 className='dot'
                 style={{
-                    animation: `fall ${duration}s linear ${delay}s infinite`,
+                    animation: `fall ${duration}s linear ${delay - 2}s infinite`,
                 }}
             />
         </LineSty>
