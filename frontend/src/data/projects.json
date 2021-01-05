@@ -3,21 +3,21 @@
         "id": 1,
         "title": "Vibe",
         "image": "vibe.jpeg",
-        "info": "A Spotify clone written with VanillaJS andExpress",
+        "info": "A Spotify clone written with VanillaJS and Express.",
         "url": "https://aa-vibe.herokuapp.com/"
     },
     {
         "id": 2,
         "title": "SafeSpace",
         "image": "safespace.png",
-        "info": "A roommate finding application the LGBTQIA+ affinity written with React, Redux, and Express",
+        "info": "A roommate finding application for the LGBTQIA+ affinity written with React, Redux, and Express.",
         "url": "https://safespace-mjames.herokuapp.com/"
     },
     {
         "id": 3,
         "title": "Isn'tgram",
         "image": "isntgram.png",
-        "info": "An Instagram clone written with React Hooks and Context, and Flask",
+        "info": "An Instagram clone written with React Hooks, Context, and Flask",
         "url": "https://isntgram.herokuapp.com/auth/login"
     },
     {
