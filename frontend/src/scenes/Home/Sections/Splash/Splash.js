@@ -1,12 +1,14 @@
 import Animation from './components/Animation/Animation';
 import SplashSty from './SplashSty';
+import data from '../../../../data/contactInfo.json';
+
 function Splash() {
     return (
         <SplashSty id='home'>
-            <Animation/>
+            <Animation />
             <div className='intro'>
-                <p className='name'>Mylo James</p>
-                <p>Fullstack Web Developer</p>
+                <p className='name'>{data.name}</p>
+                <p>{data.title}</p>
             </div>
             <a className='go' href='#journey'>
                 Let's go!
@@ -16,4 +18,3 @@ function Splash() {
 }
 
 export default Splash;
- 

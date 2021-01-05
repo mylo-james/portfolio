@@ -4,7 +4,7 @@
         "title": "Vibe",
         "image": "vibe.jpeg",
         "info": "A Spotify clone written with VanillaJS andExpress",
-        "url": "https://aa-vibe-app.herokuapp.com/"
+        "url": "https://aa-vibe.herokuapp.com/"
     },
     {
         "id": 2,

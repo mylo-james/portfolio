@@ -42,9 +42,9 @@ const GlobalStyle = createGlobalStyle`
        color: ${front};
        font-size: calc(16px + 4 * ((100vw - 320px) / 680));
        overflow-y: scroll;
-       -webkit-overflow-scrolling: touch;
        overflow-x: hidden;
        scroll-behavior: smooth;
+       -webkit-overflow-scrolling: smooth;
 
    }
 
