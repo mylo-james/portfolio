@@ -19,6 +19,12 @@
     },
     {
         "id": 4,
+        "year": "02/21",
+        "title": "Module Instructor",
+        "content": "I was promoted to Module instructor at AppAcademy! This job included presenting development curriculum and leading a team of Instructors in teaching a specific section of the Software Engineering Course."
+    },
+    {
+        "id": 5,
         "year": "2021",
         "title": "Next Step",
         "content": "I am currently looking for Software Developer positions I can add to my journey!"
