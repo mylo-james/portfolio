@@ -12,7 +12,6 @@ function ContactInfo() {
         linkedIn,
         angelList,
         github,
-        resume,
     } = contactInfo;
     return (
         <div className='info'>
@@ -23,7 +22,6 @@ function ContactInfo() {
                 <div>{phone}</div>
                 <div className='email'>{email}</div>
             </div>
-            <button onClick={() => window.open(resume)}>Download Resume</button>
             <div className='links'>
                 <SiLinkedin onClick={() => window.open(linkedIn)} />
                 <SiGithub onClick={() => window.open(github)} />

@@ -1,14 +1,16 @@
 {
-    "name": "Mylo James",
-    "title": "Fullstack Web Developer",
-    "address": "1704 Maple Place",
-    "city": "Schaumburg",
-    "state": "Illinois",
-    "zip": "60173",
-    "email": "mylo.james114@gmail.com",
-    "phone": "(847) 602-7276",
-    "linkedIn": "https://www.linkedin.com/in/myloj/",
-    "github": "https://www.github.com/mylo-james",
-    "angelList": "https://angel.co/u/mylo_james",
-    "resume": "https://docs.google.com/document/d/1jXvN9GPrAlTQBl_9Bb73UytzQfIRPI1rcUwdUyA3Z_I/export?format=pdf"
+  "name": "Mylo James",
+  "title": "Fullstack Web Developer",
+  "address": "1704 Maple Place",
+  "city": "Schaumburg",
+  "state": "Illinois",
+  "zip": "60173",
+  "email": "mylo.james114@gmail.com",
+  "phone": "(847) 602-7276",
+  "linkedIn": "https://www.linkedin.com/in/myloj/",
+  "github": "https://www.github.com/mylo-james",
+  "angelList": "https://angel.co/u/mylo_james",
+
+  "resume": "https://docs.google.com/document/d/1DxistdoGtNMItNVbYVn37TWtJaxJtT-PFR2ZJjrt_JE/export?format=pdf",
+  "resume_src": "https://docs.google.com/document/d/e/2PACX-1vRoh2iFBuct5-SPb6AN3hZSfei5xWZJfFiyGtr-3SWj_gUDINLqINBTDdxQamGD8Ymx5-w9RlxzcUep/pub?embedded=true"
 }

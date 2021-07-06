@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { accent, front, secondary } from '../../../../styles/themes';
+import styled from "styled-components";
+import { accent, front, secondary } from "../../../../styles/themes";
 
 const ContactSty = styled.div`
     position: relative;
@@ -31,7 +31,7 @@ const ContactSty = styled.div`
     .info {
         display: flex;
         flex-flow: column;
-        justify-content: space-between;
+        justify-content: space-around;
         min-width: 380px;
     }
 

@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { back, front, accent, cursor } from './themes';
-import reset from 'styled-reset';
+import { useState } from "react";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { back, front, accent, cursor } from "./themes";
+import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
    ${reset}
@@ -22,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
 
    html {
        width: 100vw;
-       cursor: ${cursor}
+       cursor: ${cursor};
+       overflow : hidden;
    }
    .app a {
        color: ${front};
@@ -68,15 +69,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const GlobalStyleWrapper = ({ children }) => {
-    const [mode, setMode] = useState('dark');
-    const [cursor, setCursor] = useState('default');
+  const [mode, setMode] = useState("dark");
+  const [cursor, setCursor] = useState("default");
 
-    return (
-        <ThemeProvider theme={{ mode, setMode, cursor, setCursor }}>
-            <GlobalStyle />
-            {children}
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider theme={{ mode, setMode, cursor, setCursor }}>
+      <GlobalStyle />
+      {children}
+    </ThemeProvider>
+  );
 };
 
 export default GlobalStyleWrapper;
