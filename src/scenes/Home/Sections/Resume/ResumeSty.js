@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { accent, front, secondary } from "../../../../styles/themes";
+import { front } from "../../../../styles/themes";
 
 const ResumeSty = styled.div`
   border: 1px solid ${front};
   padding: 20px;
 
   .header {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
   #resume {
     position: relative;
@@ -24,12 +24,12 @@ const ResumeSty = styled.div`
     height: 1020px;
     padding: 0;
     margin: 0;
-
   }
 
   @media screen and (max-width: 760px) {
-      #resume {
-          display: none;
+    #resume {
+      display: none;
+    }
   }
 `;
 

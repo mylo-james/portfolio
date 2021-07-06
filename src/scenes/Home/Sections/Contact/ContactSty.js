@@ -14,7 +14,7 @@ const ContactSty = styled.div`
     .content {
         display: flex;
         justify-content: space-around;
-        width: calc(100% - 40px)
+        width: calc(100% - 40px);
         height: 100%;
     }
 
