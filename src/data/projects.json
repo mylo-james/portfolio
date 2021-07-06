@@ -11,7 +11,7 @@
         "title": "Isn'tgram",
         "image": "isntgram.png",
         "info": "An Instagram clone written with React Hooks, Context, and Flask",
-        "url": "https://isntgram.herokuapp.com/auth/login"
+        "url": "https://isntgram-app.herokuapp.com/auth/login"
     },
     {
         "id": 3,
