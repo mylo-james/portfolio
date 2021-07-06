@@ -19,6 +19,7 @@ const StyledTextArea = styled.textarea`
     height: 100px;
     font-size: 0.7em;
     font-family: 'Rubik', sans-serif;
+    resize: none;
 
     :focus {
         outline: none;
