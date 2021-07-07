@@ -2,14 +2,15 @@ import Form from '../../../../../components/Forms/Form';
 import Input from '../../../../../components/Forms/Input';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import emailjs from 'emailjs-com';
+import emailjs, { init } from 'emailjs-com';
 import { useContext, useState } from 'react';
 import { ThemeContext } from 'styled-components';
 
 function ContactForm() {
     const { setCursor } = useContext(ThemeContext);
     const [disabled, setDisabled] = useState(false);
-    const { REACT_APP_SERVICE_ID, REACT_APP_USER_ID } = process.env;
+    const { REACT_APP_SERVICE_ID } = process.env;
+    init('user_iMJ8363ENiY5pZJ77qYui');
 
     const onSubmit = async (e) => {
         setCursor('progress');
@@ -18,7 +19,6 @@ function ContactForm() {
             REACT_APP_SERVICE_ID,
             'template_a4dhi9r',
             e.target,
-            REACT_APP_USER_ID
         );
         setCursor('default');
         setDisabled(false);
