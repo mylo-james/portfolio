@@ -22,7 +22,7 @@ const NavBarSty = styled.nav`
 
     svg:hover {
         path {
-            color: ${accent}
+            color: ${accent};
         }
     }
     .sidebar {
@@ -36,8 +36,9 @@ const NavBarSty = styled.nav`
         height: 200px;
         background: ${secondary};
         top: 100%;
-        right 5px;
+        right: 5px;
         border: 1px ${front} solid;
+        border-radius: 5px;
         text-align: center;
         padding: 20px;
     }
@@ -50,7 +51,6 @@ const NavBarSty = styled.nav`
         position: relative;
         margin-right: 5px;
     }
-
 `;
 
 export default NavBarSty;

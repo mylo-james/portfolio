@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { accent, front } from '../../../../styles/themes';
+import { accent, front, secondary } from '../../../../styles/themes';
 
 const SplashSty = styled.div`
     display: flex;
@@ -11,6 +11,16 @@ const SplashSty = styled.div`
     position: relative;
     z-index: 2;
 
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: ${secondary};
+        padding: 10vw 15vw;
+        border: white 3px solid;
+        border-radius: 5px;
+    }
     .intro {
         text-align: center;
         margin-bottom: 80px;

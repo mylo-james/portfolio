@@ -6,13 +6,15 @@ function Splash() {
     return (
         <SplashSty id='home'>
             <Animation />
-            <div className='intro'>
-                <p className='name'>{data.name}</p>
-                <p>{data.title}</p>
+            <div className='card'>
+                <div className='intro'>
+                    <p className='name'>{data.name}</p>
+                    <p>{data.title}</p>
+                </div>
+                <a className='go' href='#journey'>
+                    Let's go!
+                </a>
             </div>
-            <a className='go' href='#journey'>
-                Let's go!
-            </a>
         </SplashSty>
     );
 }

@@ -1,5 +1,4 @@
 import { useContext, useState } from 'react';
-import ToggleTheme from '../../../../../components/ToggleTheme';
 import { NavBarContext } from '../NavBar';
 import NavScroll from './NavScroll';
 
@@ -16,8 +15,6 @@ function Sidebar() {
             <NavScroll to='#journey' label='Journey' />
             <NavScroll to='#projects' label='Projects' />
             <NavScroll to='#contact' label='Contact' />
-
-            <ToggleTheme />
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { front, primary } from '../../../../styles/themes';
+import { front, primary, accent } from '../../../../styles/themes';
 
 const slideHeight = '100%';
 
@@ -28,6 +28,8 @@ const ProjectsSty = styled.div`
         width: 30%;
         height: ${slideHeight};
         margin-top: calc(50% - (${slideHeight} / 2));
+        border-radius: 5px;
+        overflow: hidden;
     }
 
     .swiper-slide:hover {
@@ -41,7 +43,7 @@ const ProjectsSty = styled.div`
 
     .swiper-button-prev:hover,
     .swiper-button-next:hover {
-        color: ${primary};
+        color: ${accent};
     }
 `;
 
